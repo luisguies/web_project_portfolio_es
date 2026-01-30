@@ -121,6 +121,12 @@
 /* END Containers */
 
 /* HEADER */
+
+.section_title {
+  padding-top: 89px;
+  paddding-bottom: 56px;
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -192,10 +198,21 @@
   text-decoration: underline-gradient(var(--accent));
 }
 
+.header__image-wrapper {
+  flex-shrink: 0;
+  width: 40%;
+  max-width: 464px;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--card-bg);
+}
+
 .header__image {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  display: block;
 }
 
 .header__container {
@@ -208,7 +225,7 @@
 
 /* MAIN ABILITIES AND TOOLS */
 
-.main{
+.main {
   position: relative;
   z-index: 1;
   display: block;
