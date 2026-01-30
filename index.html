@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="./styles/index.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <h1 class="header__title">Luis Guillermo Escobar</h1>
-      <p>Desarrollador Full Stack Junior | TypeScript, React, Node.js</p>
-      <p>
+      <p class="header__subtitle">Desarrollador Full Stack Junior | TypeScript, React, Node.js</p>
+      <p class="header__description">
         Desarrollador web junior con experiencia práctica creando interfaces
         limpias y responsivas con HTML, CSS, JavaScript y React, así como
         implementando lógica básica de back-end. Ha trabajado en proyectos
@@ -19,46 +20,72 @@
         aprendiendo, asumir nuevos retos y aprovechar oportunidades para crecer
         como desarrolladora.
       </p>
+      <ul class="header__actions-list">
+        <li class="header__actions-item"><a href="https://drive.google.com/file/d/1Y7LZCKKzaNv7GG4xHm-i0azD3U75VjWw/view?usp=drive_link">Descargar CV</a></li>
+        <li class="header__actions-item"><a href="https://github.com/luisguies">Enlace a GitHub</a></li>
+        <li class="header__actions-item"><a href="tel:+573154543511">Hablemos</a></li>
+      </ul>
+    <!-- RIGHT CONTAINER FOR IMAGE-->
+     <div class="header__image-container">
+      <img src="./images/profile-image.png" alt="Luis Guillermo Escobar" class="header__image">
+     </div>
     </header>
     <main class="main">
-      <h2>Habilidades y herramientas</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-        <li>Figma</li>
+      <h2 class="main__habilities-title">Habilidades y herramientas</h2>
+      <ul class="main__habilities-list">
+        <li class="main__habilities-item"><img class="social-icon" src="./images/html5-icon.svg" alt="HTML"></li>
+        <li class="main__habilities-item"><img class="social-icon" src="./images/css3-icon.svg" alt="CSS"></li>
+        <li class="main__habilities-item"><img class="social-icon" src="./images/javascript-icon.svg" alt="JavaScript"></li>
+        <li class="main__habilities-item"><img class="social-icon" src="./images/git-icon.svg" alt="Git"></li>
+        <li class="main__habilities-item"><img class="social-icon" src="./images/github-link-icon.svg" alt="GitHub"></li>
+        <li class="main__habilities-item"><img class="social-icon" src="./images/chatgpt-icon.svg" alt="ChatGPT"></li>
       </ul>
-      <h2>Proyectos destacados</h2>
-      <ul>
-        <li>Página web de una cafetería</li>
-        <li>Mi Portafolio</li>
+      <h2 class="main__projects-title">Proyectos destacados</h2>
+      <ul class="main__projects-list">
+        <li class="main__projects-list-item">Página web de una cafetería</li>
+        <li class="main__projects-list-item">Mi Portafolio</li>
       </ul>
     </main>
     <footer class="footer">
-      <h2>Contacto</h2>
-      <p>Email: lge041192@gmail.com</p>
-      <p>Teléfono: +57 317 823 4567</p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/luis-escobar-26650a2a3/"
-          ><img
-            src="./images/linkedin-icon.svg"
-            alt="LinkedIn"
-            width="20"
-            height="20"
-        /></a>
-      </p>
-      <p>
-        GitHub:
+      <h2 class="footer__contact-title">Contacto</h2>
+      <p class="footer__email">Email: <a href="mailto:lge041192@gmail.com">lge041192@gmail.com</a></p>
+      <p class="footer__phone">Teléfono: <a href="tel:+573154543511">+57 315 454 3511</a></p>
+      <ul class="footer__social-links-list">
+        <li class="footer__social-links-item">
         <a href="https://github.com/luisguies"
           ><img
-            src="./images/github-icon.svg"
+            class="footer__social-icon"
+            src="./images/github-link-icon.svg"
             alt="GitHub"
-            width="20"
-            height="20"
         /></a>
-      </p>
+        </li>
+        <li class="footer__social-links-item">
+        <a href="https://www.linkedin.com/in/luis-escobar-26650a2a3/"
+          ><img
+            class="footer__social-icon"
+            src="./images/linkedin-icon.svg"
+            alt="LinkedIn"
+        /></a>
+        </li>
+        <li class="footer__social-links-item">
+          <a href="https://www.instagram.com/luisg.eo/">
+            <img
+              class="footer__social-icon"
+              src="./images/instagram-icon.svg"
+              alt="Instagram"
+            />
+          </a>
+        </li>
+        <li class="footer__social-links-item">
+          <a href="https://x.com/luises20">
+            <img
+              class="footer__social-icon"
+              src="./images/x-icon.svg"
+              alt="Twitter"
+            />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

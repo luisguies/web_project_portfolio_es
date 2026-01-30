@@ -1,0 +1,150 @@
+/* FONTS */
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("../fonts/ArchivoBlack-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FONT VARIABLES */
+:root {
+  --bg-dark: #111111;
+  --card-bg: #1c1c1c;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.5);
+  --accent: #6d6dff;
+  --underline-gradient: linear-gradient(90deg, #4c1a97 0%, #6d6dff 100%);
+  --container-max: 1440px;
+  --container-padding: 120px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* END FONTS */
+
+/* PAGE - BODY */
+.page {
+  position: relative;
+  font-family:
+    "Open Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 23px;
+  background: var(--accent);
+  filter: blur(200px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 207px;
+  top: 240px;
+  background: var(--accent);
+  filter: blur(200px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* END PAGE - BODY */
+
+/* Containers */
+.container {
+  max-width: var(--container-max);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+/* END Containers */
+
+/* HEADER */
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.header__title {
+    font-family: "Archivo Black", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0 0 50px;
+    color: var(--text-primary);
+  
+}
+.header__subtitle {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+color: rgba(255, 255, 255, 0.5);
+}
+.header__description {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+color: #FFFFFF;
+}
+/* END HEADER */
